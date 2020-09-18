@@ -15,6 +15,14 @@ h5,
 h6 {
   margin: 0;
 }
+.logo { 
+    font-family: 'Mr De Haviland', cursive;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    margin: 0px 0px 0px 60px;
+    font-size: 25px;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -41,6 +49,7 @@ ul {
   transition: 0.4s ease all, 0s ease background;
 
 }
+
 .navbar ul.links li {
   text-transform: uppercase;
   padding: 0 15px;
@@ -55,40 +64,13 @@ ul {
   color: #fff;
 }
 .navbar ul.links li:hover {
-  background: red;
+  background: #e5ffe5;
   cursor: pointer;
 }
 .navbar ul.links li:hover a {
   color: #080808;
 }
-button {
-  background: red;
-  outline: none;
-  font-weight: bold;
-  padding: 10px 18px;
-  border-radius: 25px;
-  border: 1px solid red;
-  letter-spacing: 1px;
-}
-button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: white;
-  background: #222;
-  border-color: #000;
-}
-.content {
-  background-size: cover;
-  height: calc(100vh - 65px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-.content h2 {
-  color: #ffc600;
-}
+
 .navbar.sticky {
   position: fixed;
   z-index: 40;
@@ -99,6 +81,57 @@ button:hover {
   top: 65px;
 }
 
+
+.profile {
+    display: flex;
+    ;
+}
+.photo img {
+  margin: 100px 0px 40px 360px;
+  width: auto;
+  height: 400px;
+  box-shadow: 249px 12px 1px #e5ffe5;
+  border-radius: 50%;
+}
+.about {
+  margin: 200px 0px 40px 45px;
+}
+.about a{
+  text-decoration: none;
+  color: #080808;
+}
+.title {
+  font-size: 50px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+.hero-gradient {
+  position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding: 60px 12px 40px;
+    background: -webkit-linear-gradient(272deg,#4BE074 9%,#10A799 84%);
+    background: linear-gradient(-182deg,#4BE074 9%,#10A799 84%);
+    height: 400px;
+}
+#wave {
+  position: absolute;
+    height: 600px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+svg path {
+    fill: #FAFAFA;
+}
+
+@media screen and (min-width: 1024px) {
+svg {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+}
 @media screen and (max-width: 850px) {
   .navbar .right {
     height: 0;
@@ -106,7 +139,7 @@ button:hover {
   }
   .toggle {
     position: absolute;
-    top: 32.5px;
+    top: 35.5px;
     right: 20px;
     z-index: 99;
     transform: translateY(-50%);
@@ -144,8 +177,8 @@ button:hover {
     top: 0;
     left: -100%;
     flex-direction: column;
-    width: 45vw;
-    height: 100vh;
+    width: 101vw;
+    height: 43vh;
   }
   .navbar .links li:first-child {
     margin-top: 80px;
@@ -186,7 +219,10 @@ button:hover {
  span {
      font-size: 45px;
  }
-    
+ .logo { 
+    margin: 0px 0px 0px 25px;
+    font-size: 25px;
+}
 }
 
 @media (min-width: 992px) {

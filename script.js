@@ -8,3 +8,4 @@ window.addEventListener("scroll", e => {
   if (windowY > navbarHeight) navbar.classList.add("sticky");
   else navbar.classList.remove("sticky");
 });
+
