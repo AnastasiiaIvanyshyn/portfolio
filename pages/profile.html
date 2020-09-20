@@ -11,6 +11,7 @@
   <script src="https://rawgit.com/peacepostman/wavify/master/jquery.wavify.js"></script>
   <script src=""></script>
   <link href="../menu.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Cabin&family=Quicksand&family=Roboto&family=Sniglet&family=Viga&display=swap"
     rel="stylesheet">
@@ -19,27 +20,24 @@
 
 <body>
   <header>
-    <nav>
-    <div class="navbar">
-      <div class="logo">
-        <h2>Anastasiia</h2>
-      </div>
-      <ul class="links">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="toggle">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+    <div class="navbar-component font-size-text">
+      <div class="navbar area">
+        <a href="#" class="brand">Anastasiia</a>
+        <nav role="navigation" id="navigation" class="list">
+          <a href="#" class="item -link">Profile</a>
+          <a href="#" class="item -link">Portfolio</a>
+          <a href="#" class="item -link">Contact</a>
+        </nav>
+        <button data-collapse data-target="#navigation" class="toggle">
+          <span class="icon"></span>
+        </button>
       </div>
     </div>
-    </nav>
+
   </header>
   <div class="profile">
     <div class="photo">
-      <img src="me.png">
+      <img src="image/me.png">
     </div>
     <div class="about">
       <h2 class="title"><a href="">About me</a></h2>
@@ -52,9 +50,9 @@
       </span>
 
       <div class="icon">
-        <a href=""><img class="facebook icon-style" src="facebook.png"></a>
-        <a href=""><img class="linkedin icon-style" src="linkedin.png"></a>
-        <a href=""> <img class="github icon-style" src="github-logo.png"></a>
+        <a href=""><img class="facebook icon-style" src="icon/facebook.png"></a>
+        <a href=""><img class="linkedin icon-style" src="icon/linkedin.png"></a>
+        <a href=""> <img class="github icon-style" src="icon/github-logo.png"></a>
       </div>
     </div>
   </div>
@@ -81,6 +79,7 @@
               et dolore magna aliqua. Quis ipsum suspendisse<br>
               ultrices gravida. Risus commodo viverra maecenas <br>
               accumsan lacus vel facilisis. <br></p>
+              <img src="image/study-3.png">
           </div>
           <div class="box">
             <h3>Text</h3>
@@ -89,6 +88,7 @@
               et dolore magna aliqua. Quis ipsum suspendisse<br>
               ultrices gravida. Risus commodo viverra maecenas <br>
               accumsan lacus vel facilisis. <br></p>
+              <img src="image/work-1.png">
           </div>
           <div class="box">
             <h3>Text</h3>
@@ -97,6 +97,7 @@
               et dolore magna aliqua. Quis ipsum suspendisse<br>
               ultrices gravida. Risus commodo viverra maecenas <br>
               accumsan lacus vel facilisis. <br></p>
+              <img src="image/skills-2.png">
           </div>
         </div>
       </div>
@@ -199,7 +200,7 @@
   <br>
 
 
-
+  <script src="../menu-header.js"></script>
   <script src="script.js"></script>
   <script src="../script.js"></script>
 
