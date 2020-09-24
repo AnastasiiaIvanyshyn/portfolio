@@ -1,32 +1,89 @@
-body {
-  margin: 0;
-  font-family: 'Cabin', sans-serif;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-
-* {
-box-sizing: border-box;
-transition: 0.4s ease all;
+header{
+  display: block;
+  background-image: url('colage/bg-2.jpg');
+  width: 100%;
+  background-size: cover;
+}
+body {
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.brand {
+  font-family: 'Mr De Haviland', cursive;
+  font-weight: 400;
+  color: white;
+}
+.item {
+  font-weight: 600;
+  color: white;
+}
+.area {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  -webkit-box-align: stretch;
+          align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list a:active{
+  line-height: 68px;
+  color: white;
+  border-bottom: 4px solid transparent;
 }
 
 @media (min-width: 768px) {
-  .navbar-component {
+  .area {
+    width: 750px;
+  }
+  .hairdressing-services__image img {
+    height: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .area {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .area {
+    width: 1140px;
+  }
+}
+.navbar-component {
     top: 0;
     left: 0;
     position: fixed;
     width: 100%;
     z-index: 2;
     background: #080808;
-  }
-  .navbar-component > .navbar {
+}
+.navbar-component > .navbar {
   -webkit-box-pack: justify;
     justify-content: space-between;
-  }
-  .navbar > .brand {
+}
+.navbar > .brand {
   display: block;
+  font-size: 40px;
   color: white;
- 
-  }
-  .navbar > .toggle {
+  margin: 22px;
+}
+.navbar > .toggle {
   outline: none;
   border: 0;
   display: inline-block;
@@ -42,20 +99,20 @@ transition: 0.4s ease all;
       -ms-user-select: none;
           user-select: none;
   padding: 22px;
-  }
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
   .navbar > .toggle {
     display: none;
   }
-  }
-  .navbar > .toggle > .icon {
+}
+.navbar > .toggle > .icon {
   position: relative;
   margin-top: 8px;
   margin-bottom: 8px;
-  }
-  .navbar > .toggle > .icon,
-  .navbar > .toggle > .icon:before,
-  .navbar > .toggle > .icon:after {
+}
+.navbar > .toggle > .icon,
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon:after {
   display: block;
   width: 24px;
   height: 3px;
@@ -64,30 +121,30 @@ transition: 0.4s ease all;
   transition: background-color 0.3s linear, transform 0.3s linear;
   transition: background-color 0.3s linear, transform 0.3s linear, -webkit-transform 0.3s linear;
   background-color: white;
-  }
-  .navbar > .toggle > .icon:before,
-  .navbar > .toggle > .icon:after {
+}
+.navbar > .toggle > .icon:before,
+.navbar > .toggle > .icon:after {
   position: absolute;
   content: "";
-  }
-  .navbar > .toggle > .icon:before {
+}
+.navbar > .toggle > .icon:before {
   top: -8px;
-  }
-  .navbar > .toggle > .icon:after {
+}
+.navbar > .toggle > .icon:after {
   top: 8px;
-  }
-  .navbar > .toggle.-active > .icon {
+}
+.navbar > .toggle.-active > .icon {
   background-color: transparent;
-  }
-  .navbar > .toggle.-active > .icon:before {
+}
+.navbar > .toggle.-active > .icon:before {
   -webkit-transform: translateY(8px) rotate(45deg);
           transform: translateY(8px) rotate(45deg);
-  }
-  .navbar > .toggle.-active > .icon:after {
+}
+.navbar > .toggle.-active > .icon:after {
   -webkit-transform: translateY(-8px) rotate(-45deg);
           transform: translateY(-8px) rotate(-45deg);
-  }
-  .navbar > .list {
+}
+.navbar > .list {
   display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -95,14 +152,14 @@ transition: 0.4s ease all;
   -webkit-box-align: center;
           align-items: center;
   white-space: nowrap;
-  }
-  @media (min-width: 768px) {
+}
+@media (min-width: 768px) {
   .navbar > .list {
     display: -webkit-box;
     display: flex;
   }
-  }
-  @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
   .navbar > .list {
     position: fixed;
     top: 68px;
@@ -112,12 +169,12 @@ transition: 0.4s ease all;
     overflow-x: auto;
     background: #080808;
   }
-  }
-  .navbar > .list.-on {
+}
+.navbar > .list.-on {
   display: -webkit-box;
   display: block;
-  }
-  .navbar > .list > .item {
+}
+.navbar > .list > .item {
   display: block;
   flex-shrink: 0;
   height: 64px;
@@ -125,17 +182,18 @@ transition: 0.4s ease all;
   padding-left: 22px;
   padding-right: 22px;
   text-transform: uppercase;
-  color: #555;
+  color: #080808;
   font-size: 14px;
-  }
-  .navbar > .list > .item.-link {
+}
+.navbar > .list > .item.-link {
   line-height: 68px;
   color: white;
   border-bottom: 4px solid transparent;
-  }
-  .navbar > .list > .item.-link.-active,
-  .navbar > .list > .item.-link:hover,
-  .navbar > .list > .item.-link:focus {
-    background-color: #e5ffe5;
-    color: #080808;
-  }
+}
+.navbar > .list > .item.-link.-active,
+.navbar > .list > .item.-link:hover,
+.navbar > .list > .item.-link:focus {
+  color: #080808;
+  background-color: #e5ffe5;
+}
+

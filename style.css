@@ -1,140 +1,223 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-margin: 0;
-color: #232b4a;
+body {
+  font-family: 'Cabin', sans-serif;
 }
-.brand { 
-  font-family: 'Mr De Haviland', cursive;
-  letter-spacing: 3px;
-  font-weight: lighter;
-  margin: 4px 0px 0px 95px;
-  font-size: 40px;
-}
-
-a {
-text-decoration: none;
--webkit-transition: all 0.3s linear 0s;
-transition: all 0.3s linear 0s;
-}
-
-.item {
-font-weight: 600;
-color: white;
-}
-.area {
-display: -webkit-box;
-display: flex;
--webkit-box-orient: horizontal;
--webkit-box-direction: normal;
-        flex-flow: row wrap;
--webkit-box-align: stretch;
-        align-items: stretch;
-margin-left: auto;
-margin-right: auto;
-}
-.list a:active{
-line-height: 68px;
-color: white;
-border-bottom: 4px solid transparent;
-}
-
-
 .profile {
-display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 .photo img {
-margin: 200px 0px 40px 360px;
-width: auto;
-height: 400px;
-box-shadow: 249px 12px 1px #e5ffe5;
-border-radius: 50%;
+  margin: 200px 0px 40px 360px;
+  width: auto;
+  height: 400px;
+  box-shadow: 249px 12px 1px #e5ffe5;
+  border-radius: 50%;
+  }
+  .about {
+  margin: 270px 0px 40px 45px;
+  }
+  .about a{
+  text-decoration: none;
+  color: #080808;
+  }
+  .title {
+  font-size: 50px;
+  text-transform: uppercase;
+  }
+  .profile-title {
+    margin: 51px 0px 45px 0px;
+  }
+  .icon {
+  margin: 33px 0px 0px 84px;
+  }
+  .icon img {
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px 0px 10px;
+  }
+  .facebook {
+  margin: 0px 0px 0px 0px;
+  }
+  .linkedin {
+  margin: 0px 0px 0px 0px;
+  }
+  .hero-gradient {
+    position: relative;
+      width: 100%;
+      margin-top: -150px;
+      padding: 60px 12px 40px;
+      background-color: #e5ffe5;
+      height: 1000px;
+    }
+    #wave {
+    position: absolute;
+      height: 600px;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    svg path {
+      fill: white;
+    }
+    .portfolio{
+    padding: 215px 0px 0px 0px;
+    }
+    .portfolio h2, h3{
+    text-align: center;
+    }
+    .portfolio-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .portfolio-title {
+      margin: -5px 0px 45px 0px;
+    }
+    .box {
+    margin: 20px 20px;
+    }
+    .box img {
+        display: flex;
+        height: 325px;
+        width: auto;
+        margin: 35px 0px 0px 0px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* СТИЛІ ДЛЯ АДАПТИВНОСТІ */
+
+@media (max-width: 768px) {
+.text-about {
+  font-size: 15px;
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+}
+#title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  -webkit-background-clip: text;
+  webkit-text-fill-color: transparent;
+  margin: 5px;
+}
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo img {
+  margin: 140px 0px 0px 20px;
+  width: auto;
+  height: 326px;
+  box-shadow: 6px 230px 1px #e5ffe5;
+  border-radius: 50%;
 }
 .about {
-margin: 270px 0px 40px 45px;
+  margin: 36px 0px 40px 45px;
 }
 .about a{
-text-decoration: none;
-color: #080808;
+  text-decoration: none;
+  color: #080808;
 }
 .title {
-font-size: 50px;
-margin: 20px;
-text-transform: uppercase;
+  font-size: 35px;
+  margin: 24px 0px 45px 45px;
+  text-transform: uppercase;
 }
 .icon {
-margin: 33px 0px 0px 84px;
+  margin: 33px 0px 0px 55px;
 }
 .icon img {
-height: 30px;
-width: 30px;
-margin: 0px 10px 0px 10px;
+  height: 30px;
+  width: 30px;
+  margin: 0px 10px 0px 10px;
 }
 .facebook {
-margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 .linkedin {
-margin: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}    
+.portfolio{
+  padding: 215px 0px 0px 0px;
 }
-
+.portfolio h2, h3{
+  text-align: center;
+}
+.portfolio-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portfolio-title{
+  margin: -150px 0px 0px 0px;
+}
+.box {
+  margin: 20px 20px;
+}
+.box img {
+  display: flex;
+  height: 275px;
+  width: auto;
+  margin: 35px 0px 0px 0px;
+}
 .hero-gradient {
-position: relative;
+  position: relative;
   width: 100%;
   margin-top: -150px;
   padding: 60px 12px 40px;
   background-color: #e5ffe5;
-  height: 1000px;
+  height: 1750px;
 }
-#wave {
-position: absolute;
-  height: 600px;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
-svg path {
-  fill: white;
-}
-.portfolio{
-padding: 215px 0px 0px 0px;
-}
-.portfolio h2, h3{
-text-align: center;
-}
-.portfolio-info {
-display: flex;
-justify-content: center;
-}
-.box {
-margin: 20px 20px;
-}
-.box img {
-    display: flex;
-    height: 325px;
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .photo img {
+    margin: 200px 0px 40px 200px;
     width: auto;
-    background-size: cover;
-    margin: 35px 0px 0px 0px;
+    height: 400px;
+    box-shadow: 249px 12px 1px #e5ffe5;
+    border-radius: 50%;
+}
+.hero-gradient {
+  position: relative;
+  width: 100%;
+  margin-top: -150px;
+  padding: 60px 12px 40px;
+  background-color: #e5ffe5;
+  height: 1516px;
+}
 }
 
-
-@media (max-width: 768px) {
-span {
-   font-size: 45px;
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about {
+    margin: -372px 0px 40px 485px;
 }
-.logo { 
-  margin: 0px 0px 0px 25px;
-  font-size: 25px;
+.photo img {
+  margin: 200px 0px 40px 55px;
+  width: auto;
+  height: 400px;
+  box-shadow: 249px 12px 1px #e5ffe5;
+  border-radius: 50%;
 }
+.hero-gradient {
+  position: relative;
+  width: 100%;
+  margin-top: -150px;
+  padding: 60px 12px 40px;
+  background-color: #e5ffe5;
+  height: 1250px;
 }
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1200px) {
-  
 }
